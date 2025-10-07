@@ -1,10 +1,10 @@
 # Simple Python Chess Engine
 
-A lightweight and modular chess engine built in Python using the `python-chess` library, demonstrating fundamental AI search algorithms for game play. The engine uses a modular `Player` class structure, allowing for easy testing and expansion of AI strategies.
+A lightweight and modular chess engine built in Python using the powerful `python-chess` library, demonstrating fundamental AI search algorithms for game play. The engine uses a modular `Player` class structure, allowing for easy testing and expansion of AI strategies.
 
 ## AI Engine and Algorithms
 
-The core intelligence of this project resides in the application of the Minimax search algorithm.
+The core intelligence of this project resides in the application of the Minimax search algorithm, optimized with advanced techniques.
 
 ### 1. Minimax Search with Alpha-Beta Pruning and Iterative Deepening
 
@@ -35,6 +35,18 @@ The project defines an abstract **`Player`** class and includes several concrete
 
 ### Intelligent Player
 
-* **`MinimaxPlayer
+* **`MinimaxPlayer`**: The main AI, using the Minimax search algorithm with Alpha-Beta Pruning and Iterative Deepening.
+
+### Baseline Players
+
+* **`DumbCapturePlayer`**: A greedy opponent that implements a basic heuristic: it prioritizes moves that result in a check, followed by any capture, falling back to a random legal move only if neither of the better options exist.
+* **`RandomPlayer`**: The simplest opponent, which selects a move uniformly at random from all legal moves on the board.
+
+---
+
+## Utilities
+
+* **`ChessMatch`**: A utility class to orchestrate and run a single game between any two initialized `Player` instances until a game outcome is reached.
+* **`ChessTournament`**: A class designed to run multiple matches (`num_matches`) between two players and calculate the final win/loss/draw statistics.
 * 
 ![Screenshot](./mate.PNG)
