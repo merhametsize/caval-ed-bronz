@@ -1,5 +1,7 @@
 # Simple Python Chess Engine
 
+![Screenshot](./mate.PNG)
+
 A lightweight and modular chess engine built in Python using the powerful `python-chess` library, demonstrating fundamental AI search algorithms for game play. The engine uses a modular `Player` class structure, allowing for easy testing and expansion of AI strategies.
 
 ## AI Engine and Algorithms
@@ -48,5 +50,3 @@ The project defines an abstract **`Player`** class and includes several concrete
 
 * **`ChessMatch`**: A utility class to orchestrate and run a single game between any two initialized `Player` instances until a game outcome is reached.
 * **`ChessTournament`**: A class designed to run multiple matches (`num_matches`) between two players and calculate the final win/loss/draw statistics.
-* 
-![Screenshot](./mate.PNG)
