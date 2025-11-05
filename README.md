@@ -1,8 +1,8 @@
-# Simple Python Chess Engine
+# Caval ëd Bronz - Simple Python Chess Engine
 
 ![Screenshot](./mate.PNG)
 
-A lightweight and modular chess engine built in Python using the powerful `python-chess` library, demonstrating fundamental AI search algorithms for game play. The engine uses a modular `Player` class structure, allowing for easy testing and expansion of AI strategies.
+A lightweight Python chess engine using the `python-chess` library for board representation, demonstrating AI search algorithms for game play. The engine uses a modular `Player` class structure, allowing for easy testing and expansion of AI strategies.
 
 ## AI Engine and Algorithms
 
@@ -10,7 +10,7 @@ The core intelligence of this project resides in the application of the Minimax 
 
 ### 1. Minimax Search with Alpha-Beta Pruning and Iterative Deepening
 
-The primary engine is the **`MinimaxPlayer`**, which leverages the Minimax algorithm to determine the optimal move for a given search depth.
+The primary engine is the **`MinimaxPlayer`**, which employs the Minimax algorithm to determine the optimal move for a given search depth.
 
 * **Alpha-Beta Pruning:** The search is dramatically accelerated by implementing Alpha-Beta Pruning, which efficiently prunes branches of the search tree that cannot possibly influence the final decision.
 * **Configurable Depth:** The engine is initialized with a configurable search limit (`depth`), defaulting to **3** half-moves.
