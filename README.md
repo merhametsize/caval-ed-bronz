@@ -2,11 +2,7 @@
 
 ![Screenshot](./mate.PNG)
 
-A lightweight Python chess engine using the `python-chess` library for board representation, demonstrating AI search algorithms for game play. The engine uses a modular `Player` class structure, allowing for easy testing and expansion of AI strategies.
-
-## AI Engine and Algorithms
-
-The core intelligence of this project resides in the application of the Minimax search algorithm, optimized with advanced techniques.
+A lightweight Python chess engine using the `python-chess` library for board representation.
 
 ### 1. Minimax Search with Alpha-Beta Pruning and Iterative Deepening
 
